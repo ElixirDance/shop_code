@@ -1051,125 +1051,125 @@ const router = createRouter({
                         }
                     ]
                 },
-                {
-                    path: "salesman",
-                    name: "salesman",
-                    redirect: "/salesman/index",
-                    component: () => import("@/layouts/base/index.vue"),
-                    meta: { title: "分销" },
-                    children: [
-                        {
-                            path: "index",
-                            name: "overviewManage",
-                            meta: { title: "分销概览", isShowInHeader: true },
-                            component: () => import("@/views/salesman/overview/Index.vue")
-                        },
-                        {
-                            path: "promoteMode/list",
-                            name: "promoteModeManage",
-                            meta: { title: "分销模式" },
-                            component: () => import("@/views/salesman/promoteMode/List.vue")
-                        },
-                        {
-                            path: "",
-                            name: "salesmanProduct",
-                            meta: { title: "分销商品" },
-                            redirect: "/salesman/product/list",
-                            children: [
-                                {
-                                    path: "product/list",
-                                    name: "salesmanProductManage",
-                                    meta: { title: "商品佣金管理" },
-                                    component: () => import("@/views/salesman/product/List.vue")
-                                },
-                                {
-                                    path: "overview/analysisTable",
-                                    name: "AnalysisTableManage",
-                                    meta: { title: "商品成交分析" },
-                                    component: () => import("@/views/salesman/overview/src/AnalysisTable.vue")
-                                },
-                            ]
-                        },
-                        {
-                            path: "",
-                            name: "salesmanManage",
-                            meta: { title: "分销员管理" },
-                            redirect: "/salesman/promoter/list",
-                            children: [
-                                {
-                                    path: "promoter/list",
-                                    name: "promoterManage",
-                                    meta: { title: "分销员列表" },
-                                    component: () => import("@/views/salesman/promoter/List.vue")
-                                },
-                                {
-                                    path: "subgroup/list",
-                                    name: "subgroupManage",
-                                    meta: { title: "分销员分组" },
-                                    component: () => import("@/views/salesman/subgroup/List.vue")
-                                },
-                                {
-                                    path: "overview/rankingTable",
-                                    name: "RankingTableManage",
-                                    meta: { title: "分销员排行" },
-                                    component: () => import("@/views/salesman/overview/src/RankingTable.vue")
-                                },
-                                {
-                                    path: "salesmanDetailed/list",
-                                    name: "salesmanDetailedManage",
-                                    meta: { title: "分销员明细" },
-                                    component: () => import("@/views/salesman/salesmanDetailed/List.vue")
-                                },
-                            ]
-                        },
-                        {
-                            path: "",
-                            name: "performanceSettlement",
-                            meta: { title: "分销结算" },
-                            redirect: "/salesman/performanceSettlement/setting/index",
-                            children: [
-                                {
-                                    path: "performanceSettlement/setting/index",
-                                    name: "performanceSettlementSettingManage",
-                                    meta: { title: "结算方案设置" },
-                                    component: () => import("@/views/salesman/performanceSettlement/setting/Index.vue")
-                                },
-                                {
-                                    path: "performanceSettlement/list",
-                                    name: "performanceSettlementManage",
-                                    meta: { title: "业绩结算" },
-                                    component: () => import("@/views/salesman/performanceSettlement/performanceSettlement/List.vue")
-                                },
-                            ]
-                        },
-                        {
-                            path: "",
-                            name: "noticeManage",
-                            meta: { title: "内容管理" },
-                            redirect: "/salesman/notice/list",
-                            children: [
-                                {
-                                    path: "notice/list",
-                                    name: "salesmanNoticeManage",
-                                    meta: { title: "分销攻略" },
-                                    component: () => import("@/views/salesman/notice/List.vue")
-                                },
-                                {
-                                    path: "materialCategory/list",
-                                    name: "materialCategoryManage",
-                                    meta: { title: "素材分类" },
-                                    component: () => import("@/views/salesman/category/List.vue")
-                                },
-                                {
-                                    path: "material/list",
-                                    name: "materialManage",
-                                    meta: { title: "素材管理" },
-                                    component: () => import("@/views/salesman/material/List.vue")
-                                }
-                            ]
-                        }
-                    ]
-                },
+                // {
+                //     path: "salesman",
+                //     name: "salesman",
+                //     redirect: "/salesman/index",
+                //     component: () => import("@/layouts/base/index.vue"),
+                //     meta: { title: "分销" },
+                //     children: [
+                //         {
+                //             path: "index",
+                //             name: "overviewManage",
+                //             meta: { title: "分销概览", isShowInHeader: true },
+                //             component: () => import("@/views/salesman/overview/Index.vue")
+                //         },
+                //         {
+                //             path: "promoteMode/list",
+                //             name: "promoteModeManage",
+                //             meta: { title: "分销模式" },
+                //             component: () => import("@/views/salesman/promoteMode/List.vue")
+                //         },
+                //         {
+                //             path: "",
+                //             name: "salesmanProduct",
+                //             meta: { title: "分销商品" },
+                //             redirect: "/salesman/product/list",
+                //             children: [
+                //                 {
+                //                     path: "product/list",
+                //                     name: "salesmanProductManage",
+                //                     meta: { title: "商品佣金管理" },
+                //                     component: () => import("@/views/salesman/product/List.vue")
+                //                 },
+                //                 {
+                //                     path: "overview/analysisTable",
+                //                     name: "AnalysisTableManage",
+                //                     meta: { title: "商品成交分析" },
+                //                     component: () => import("@/views/salesman/overview/src/AnalysisTable.vue")
+                //                 },
+                //             ]
+                //         },
+                //         {
+                //             path: "",
+                //             name: "salesmanManage",
+                //             meta: { title: "分销员管理" },
+                //             redirect: "/salesman/promoter/list",
+                //             children: [
+                //                 {
+                //                     path: "promoter/list",
+                //                     name: "promoterManage",
+                //                     meta: { title: "分销员列表" },
+                //                     component: () => import("@/views/salesman/promoter/List.vue")
+                //                 },
+                //                 {
+                //                     path: "subgroup/list",
+                //                     name: "subgroupManage",
+                //                     meta: { title: "分销员分组" },
+                //                     component: () => import("@/views/salesman/subgroup/List.vue")
+                //                 },
+                //                 {
+                //                     path: "overview/rankingTable",
+                //                     name: "RankingTableManage",
+                //                     meta: { title: "分销员排行" },
+                //                     component: () => import("@/views/salesman/overview/src/RankingTable.vue")
+                //                 },
+                //                 {
+                //                     path: "salesmanDetailed/list",
+                //                     name: "salesmanDetailedManage",
+                //                     meta: { title: "分销员明细" },
+                //                     component: () => import("@/views/salesman/salesmanDetailed/List.vue")
+                //                 },
+                //             ]
+                //         },
+                //         {
+                //             path: "",
+                //             name: "performanceSettlement",
+                //             meta: { title: "分销结算" },
+                //             redirect: "/salesman/performanceSettlement/setting/index",
+                //             children: [
+                //                 {
+                //                     path: "performanceSettlement/setting/index",
+                //                     name: "performanceSettlementSettingManage",
+                //                     meta: { title: "结算方案设置" },
+                //                     component: () => import("@/views/salesman/performanceSettlement/setting/Index.vue")
+                //                 },
+                //                 {
+                //                     path: "performanceSettlement/list",
+                //                     name: "performanceSettlementManage",
+                //                     meta: { title: "业绩结算" },
+                //                     component: () => import("@/views/salesman/performanceSettlement/performanceSettlement/List.vue")
+                //                 },
+                //             ]
+                //         },
+                //         {
+                //             path: "",
+                //             name: "noticeManage",
+                //             meta: { title: "内容管理" },
+                //             redirect: "/salesman/notice/list",
+                //             children: [
+                //                 {
+                //                     path: "notice/list",
+                //                     name: "salesmanNoticeManage",
+                //                     meta: { title: "分销攻略" },
+                //                     component: () => import("@/views/salesman/notice/List.vue")
+                //                 },
+                //                 {
+                //                     path: "materialCategory/list",
+                //                     name: "materialCategoryManage",
+                //                     meta: { title: "素材分类" },
+                //                     component: () => import("@/views/salesman/category/List.vue")
+                //                 },
+                //                 {
+                //                     path: "material/list",
+                //                     name: "materialManage",
+                //                     meta: { title: "素材管理" },
+                //                     component: () => import("@/views/salesman/material/List.vue")
+                //                 }
+                //             ]
+                //         }
+                //     ]
+                // },
                 {
                     path: "print",
                     name: "print",

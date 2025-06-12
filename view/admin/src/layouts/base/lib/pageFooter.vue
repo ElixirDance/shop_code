@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
-        <span>{{ licensedStore.licensedData.shopCompany }}</span>
-        <span v-if="licensedStore.licensedData.versionInfoHidden == 0">{{ licensedStore.licensedData.versionType }} v{{ licensedStore.licensedData.version }}</span>
+        <!-- <span>{{ licensedStore.licensedData.shopCompany }}</span>
+        <span v-if="licensedStore.licensedData.versionInfoHidden == 0">{{ licensedStore.licensedData.versionType }} v{{ licensedStore.licensedData.version }}</span> -->
     </div>
 </template>
 <script setup lang="ts">

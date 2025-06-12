@@ -1,9 +1,9 @@
 <template>
     <div class="login-page-left">
-        <a class="top-bar-btn" target="_blank" href="https://www.tigshop.com" title="起始页" style="padding: 0 3px" v-if="licensedData">
+        <!-- <a class="top-bar-btn" target="_blank" href="https://www.tigshop.com" title="起始页" style="padding: 0 3px" v-if="licensedData">
             <img v-if="!licensedData.adminLightLogo || licensedData.adminLightLogo == null" style="margin: 10px" height="40" src="~@/style/images/logo2.png" />
             <img v-else style="margin: 10px" height="40" :src="imageFormat(licensedData.adminLightLogo)" />
-        </a>
+        </a> -->
     </div>
 </template>
 <script lang="ts" setup>

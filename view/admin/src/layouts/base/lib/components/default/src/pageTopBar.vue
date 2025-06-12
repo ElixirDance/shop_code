@@ -48,11 +48,11 @@
             </div>
             <div class="top-bar-right">
                 <div class="top-bar-item mr10">
-                    <div class="auth-img">
+                    <!-- <div class="auth-img">
                         <router-link v-if="adminType!=='shop'" :to="{ path: '/setting/licensed/index' }">
                             <img :src="isShowAvatar()" style="height: 25px;margin-top: 2px;">
                         </router-link>
-                    </div>
+                    </div> -->
                 </div>
                 <MsgCount></MsgCount>
                 <div class="top-bar-item openShop-btn">

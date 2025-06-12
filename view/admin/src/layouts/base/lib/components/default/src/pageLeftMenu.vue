@@ -1,7 +1,8 @@
 <template>
     <div class="body-menu" :class="{ 'active': menusStore.menuActive, 'shop-admin': adminType === 'shop', 'dark': themeInfo.navTheme === 'dark' }">
         <perfect-scrollbar class="main-menu">
-            <div class="main-menu-logo">
+            <div class="main-menu-logo-2"></div>
+            <!-- <div class="main-menu-logo">
                 <a class="lyecs-openPage" data-href="index.html" data-tag="default" title="起始页" style="padding: 0 3px">
                     <img
                         v-if="adminType === 'shop' || themeInfo.navTheme === 'dark'"
@@ -9,7 +10,7 @@
                     />
                     <img v-else :src="(licensedData.adminLightLogo && licensedData.adminLightLogo !== null) ? imageFormat(licensedData.adminLightLogo) : logoBlue" />
                 </a>
-            </div>
+            </div> -->
             <ul v-if="menus">
                 <template v-for="(menu, key) in menus">
                     <li v-if="menu.isShow" :class="'main-menu-item menu_' + menu.authoritySn + ' ' + (menu.current ? 'current' : '')">
@@ -208,7 +209,11 @@ watchEffect(() => {
         background-color: rgba(255, 255, 255, 0.16);
     }
 }
-
+.main-menu-logo-2 {
+    display: block;
+    text-align: center;
+    min-height: 40px;
+}
 .main-menu-logo {
     display: block;
     text-align: center;
