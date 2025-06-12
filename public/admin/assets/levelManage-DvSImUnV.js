@@ -1,0 +1,1 @@
+import{y as r}from"./index-do84fcHd.js";const u=e=>r({url:"user/userRank/list",method:"get",params:e}),a=e=>r({url:"user/userRank/"+e,method:"get"}),n=(e,s)=>r({url:"user/userRank/"+e,method:"post",data:s});export{a,u as g,n as u};
